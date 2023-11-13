@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+html, body {
+height: 100%;
+margin: 0;
+font-family: 'Playfair Display', serif;
+}
+
+*{
+border: none;
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+.menu{
+background-color: rgb(29, 29, 78);;
+height: 50px;
+width: 100%;
+display: flex;
+font-family: 'Playfair Display', serif;
+}
+.searchbar{
+background-color: rgb(141, 141, 141);
+display: flex;
+width: calc(100% - 150px);
+position: absolute;
+height: 50px;
+font-family: 'Playfair Display', serif;
+}
+.search{
+display: flex;
+height: 30px;
+justify-content: center;
+align-items: center;
+outline: none;
+cursor:pointer ;
+margin: auto 0px 10px 5%;
+font-family: 'Playfair Display', serif;
+}
+.btn_filtro{
+display: flex;
+height: 30px;
+width: 55px;
+justify-content: center;
+align-items: center;
+outline: none;
+cursor:pointer ;
+margin: auto 0px 10px 10px;
+font-family: 'Playfair Display', serif;
+}
+.btn_search{
+display: flex;
+height: 30px;
+width: 70px;
+justify-content: center;
+align-items: center;
+cursor:pointer ;
+margin: auto 0px 10px 10px;
+}
+.tabelas{
+display: flex;
+height: 30px;  
+justify-content: center;
+align-items: center; 
+outline: none;
+cursor:pointer ;
+margin: auto 0px 10px 59%;
+font-family: 'Playfair Display', serif;
+}
+.sidebar {
+width: 150px;
+background-color: rgb(29, 29, 78);
+margin-left: auto;
+margin-top: 0%;
+height:calc(100% - 50px);
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin-top: 0px;
+width: 100%;
+text-align: center;
+}
+.sidebar ul li {
+padding: 10px;
+height: 50px;
+width: 100%;
+display: inline-flex;
+align-items:center;
+justify-content:flex-start;
+font-family: 'Playfair Display', serif;
+}
+.sidebar ul li:hover{
+background-color: #ff83aa;
+color: white;
+border-right: 4px solid white;
+
+}
+.sidebar ul li img {
+vertical-align: middle; 
+height: 15px; 
+width: 15px;
+margin-left: 25px;
+}
+.sidebar ul li a {
+text-decoration: none;
+color: #000000;
+display: block;
+text-align: center;
+margin-left: 10px;
+}
+.tab{
+border: 2x solid red;
+background-color: #cfcdcd;
+display: flex;
+width: calc(100% - 150px);
+position: absolute;
+height:calc(100% - 100px);
+margin-top: 50px;
+justify-content: flex-start;
+align-self: flex-start;   
+flex-direction: column;
+}
+.colunas_prod{
+border: 2px solid yellow;
+height: calc(100% - 60px);
+width: 90%; 
+display: flex;
+margin-left: 5%;
+justify-content: flex-start;
+align-self: flex-start;   
+flex-direction: column;
+background-color: #5f0a25;
+}
+.header_prod{
+border: 2px solid brown;
+display: flex;
+align-self: flex-start;   
+flex-direction: row;
+background-color: antiquewhite;
+width: 100%;
+flex-wrap: wrap;
+}
+.id{
+background-color: blue;
+display: flex;
+flex:1;
+min-width: 50px;
+max-width: 70px;
+justify-content: center;
+}
+.changes{
+background-color: blue;
+min-width: 100px;
+max-width: 100px;
+justify-content: center;
+}
+.preco,.custo,.quantidade{
+background-color: purple;
+display: flex;
+flex: 1;
+min-width: 70px;
+max-width: 90px;
+justify-content: center;
+}
+
+.nome,.fabricante{
+background-color: orangered;
+display: flex;
+flex: 1;
+min-width: 150px;
+max-width: 230px;
+justify-content: center;
+}
+
+.data{
+background-color: gray;
+display: flex;
+flex: 1;
+min-width: 120px;
+max-width: 180px;
+justify-content: center;
+}
+
+
+
+.paginacao{
+border: 2px solid;
+height: 60px;
+display: flex;
+bottom: 0%;
+width:100%;
+position: absolute;
+}

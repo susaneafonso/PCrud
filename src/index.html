@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susane Afonso</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="menu"></div>
+    
+    <div class="searchbar">
+        <input class="search" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <select class="btn_filtro">         
+            <option value="filtro">Filtro</option>
+            <option value="novo">Novo</option>
+            <option value="antigo">Antigo</option>
+            <option value="menorvalor">Menor Valor</option>
+            <option value="maiorvalor">Maior Valor</option>
+        </select>
+        <button class="btn_search" type="submit" href="#">
+            Pesquisar
+        </button>
+            <select class="tabelas" >
+                <option value="product"  >Produtos</option>
+                <option value="costumer" onclick="dfg()">Clientes</option>
+                <option value="sales">Vendas</option>
+            </select>
+    </div>
+    
+      
+    <div class="tab">
+
+    <div class="colunas_prod">
+         <div class="header_prod">
+                 <div class="id">ID</div>
+                 <div class="nome">Nome</div>
+                 <div class="fabricante">Fabricante</div>
+                 <div class="quantidade">Quantidade</div>
+                 <div class="custo">Custo</div>
+                 <div class="preco">Preço</div>
+                 <div class="data">Data</div>
+                 <div class="changes"></div>
+         </div>   
+         <div class="linhas_prod">
+            
+        
+        
+        </div>   
+    </div>
+    <div class="paginacao">hlkklhlh</div>
+    </div>
+
+
+    <div class="sidebar">
+        <ul>
+            <li><img src="./css/img/perfil.png" alt="" srcset=""><a id="newform" href="#">Profile</a></li>
+            <li><img src="./css/img/editar.png" alt="" srcset=""><a href="../cadastrop/index.html" target="_blank" onclick="window.open('../cadastrop/index.html','form','fullscreen=0,resizable=0,height=550,width=600')">
+                Criar</a></li>
+            <li><img src="./css/img/historia.png" alt=""        ><a href="#">Histórico</a></li>
+            <li><img src="./css/img/sair.png" alt="" srcset="">  <a href="#">Sair</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
