@@ -12,14 +12,14 @@ margin: 0%;
 box-sizing: border-box;
 }
 .menu{
-background-color: rgb(29, 29, 78);;
+background-color:  #495057;
 height: 50px;
 width: 100%;
 display: flex;
 font-family: 'Playfair Display', serif;
 }
 .searchbar{
-background-color: rgb(141, 141, 141);
+background-color:  #f0fff3;
 display: flex;
 width: calc(100% - 150px);
 position: absolute;
@@ -28,17 +28,19 @@ font-family: 'Playfair Display', serif;
 }
 .search{
 display: flex;
-height: 30px;
+height: 25px;
 justify-content: center;
 align-items: center;
 outline: none;
 cursor:pointer ;
-margin: auto 0px 10px 5%;
+margin: auto 0px 10px 6%;
 font-family: 'Playfair Display', serif;
+border-radius: 5px;
+border: 1px solid;
 }
 .btn_filtro{
 display: flex;
-height: 30px;
+height: 25px;
 width: 55px;
 justify-content: center;
 align-items: center;
@@ -46,29 +48,35 @@ outline: none;
 cursor:pointer ;
 margin: auto 0px 10px 10px;
 font-family: 'Playfair Display', serif;
+border-radius: 5px;
+border: 1px solid;
 }
 .btn_search{
 display: flex;
-height: 30px;
+height: 25px;
 width: 70px;
 justify-content: center;
 align-items: center;
 cursor:pointer ;
 margin: auto 0px 10px 10px;
+border-radius: 5px;
+border: 1px solid;
 }
 .tabelas{
 display: flex;
-height: 30px;  
+height: 25px;  
 justify-content: center;
 align-items: center; 
 outline: none;
 cursor:pointer ;
-margin: auto 0px 10px 59%;
+margin: auto 0px 10px 10px;
 font-family: 'Playfair Display', serif;
+border-radius: 5px;
+border: 1px solid;
 }
 .sidebar {
 width: 150px;
-background-color: rgb(29, 29, 78);
+background-color: #6c757d;
 margin-left: auto;
 margin-top: 0%;
 height:calc(100% - 50px);
@@ -93,9 +101,9 @@ justify-content:flex-start;
 font-family: 'Playfair Display', serif;
 }
 .sidebar ul li:hover{
-background-color: #ff83aa;
+background-color:  #495057;
 color: white;
-border-right: 4px solid white;
+border-right: 2px solid white;
 
 }
 .sidebar ul li img {
@@ -112,19 +120,19 @@ text-align: center;
 margin-left: 10px;
 }
 .tab{
-border: 2x solid red;
-background-color: #cfcdcd;
+background-color: #f6fff8;
 display: flex;
 width: calc(100% - 150px);
 position: absolute;
 height:calc(100% - 100px);
-margin-top: 50px;
+margin-top: 60px;
 justify-content: flex-start;
 align-self: flex-start;   
 flex-direction: column;
 }
 .colunas_prod{
-border: 2px solid yellow;
+border-top-right-radius: 20px; 
+border-top-left-radius: 20px;   
 height: calc(100% - 60px);
 width: 90%; 
 display: flex;
@@ -132,19 +140,25 @@ margin-left: 5%;
 justify-content: flex-start;
 align-self: flex-start;   
 flex-direction: column;
-background-color: #5f0a25;
+background-color: #4f5d75;
+
 }
 .header_prod{
-border: 2px solid brown;
+border-top: 1px solid #36453b ;
+border-left: 1px solid #36453b;
+border-right:1px solid #36453b ;
+border-bottom: none;
+border-top-right-radius: 20px; 
+border-top-left-radius: 20px; 
 display: flex;
 align-self: flex-start;   
 flex-direction: row;
-background-color: antiquewhite;
 width: 100%;
 flex-wrap: wrap;
 }
 .id{
-background-color: blue;
+
+background-color: #cce3de;
 display: flex;
 flex:1;
 min-width: 50px;
@@ -152,13 +166,13 @@ max-width: 70px;
 justify-content: center;
 }
 .changes{
-background-color: blue;
-min-width: 100px;
+background-color: #cce3de;
+min-width: 110px;
 max-width: 100px;
 justify-content: center;
 }
 .preco,.custo,.quantidade{
-background-color: purple;
+background-color: #cce3de;
 display: flex;
 flex: 1;
 min-width: 70px;
@@ -167,23 +181,43 @@ justify-content: center;
 }
 
 .nome,.fabricante{
-background-color: orangered;
+background-color: #cce3de;
+display: flex;
+flex: 1;
+min-width: 160px;
+max-width: 160px;
+justify-content: center;
+}
+.descricao{
+background-color: #cce3de;
 display: flex;
 flex: 1;
 min-width: 150px;
-max-width: 230px;
+max-width: 150px;
 justify-content: center;
 }
-
 .data{
-background-color: gray;
+background-color: #cce3de;
 display: flex;
 flex: 1;
-min-width: 120px;
-max-width: 180px;
+min-width: 130px;
+max-width: 170px;
 justify-content: center;
 }
-
+#cabecal{
+background-color: #4f5d75;
+border-top-right-radius: 20px; 
+border-top-left-radius: 20px; 
+}
+.linhas{
+display: flex;
+align-self: flex-start;   
+flex-direction: row;
+width: 100%;
+background-color: #cce3de;
+flex-wrap: wrap;
+border-top: 1px  #36453b solid;
+}
 
 
 .paginacao{
