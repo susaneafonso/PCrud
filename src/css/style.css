@@ -3,6 +3,7 @@ html, body {
 height: 100%;
 margin: 0;
 font-family: 'Playfair Display', serif;
+background-color: #dee2e6;
 }
 
 *{
@@ -19,7 +20,7 @@ display: flex;
 font-family: 'Playfair Display', serif;
 }
 .searchbar{
-background-color:  #f0fff3;
+background-color:  #dee2e6;
 display: flex;
 width: calc(100% - 150px);
 position: absolute;
@@ -36,7 +37,8 @@ cursor:pointer ;
 margin: auto 0px 10px 6%;
 font-family: 'Playfair Display', serif;
 border-radius: 5px;
-border: 1px solid;
+border: 1px solid #495057;
+background-color: #c3cbd3;
 }
 .btn_filtro{
 display: flex;
@@ -49,7 +51,8 @@ cursor:pointer ;
 margin: auto 0px 10px 10px;
 font-family: 'Playfair Display', serif;
 border-radius: 5px;
-border: 1px solid;
+border: 1px solid #495057;
+background-color: #c3cbd3;
 }
 .btn_search{
 display: flex;
@@ -60,7 +63,13 @@ align-items: center;
 cursor:pointer ;
 margin: auto 0px 10px 10px;
 border-radius: 5px;
-border: 1px solid;
+border: 1px solid #495057;
+background-color: #c3cbd3;
+}
+.btn_search:hover{
+background-color:red;
+color: white;
+border: rgb(197, 1, 1);
 }
 .tabelas{
 display: flex;
@@ -72,7 +81,8 @@ cursor:pointer ;
 margin: auto 0px 10px 10px;
 font-family: 'Playfair Display', serif;
 border-radius: 5px;
-border: 1px solid;
+border: 1px solid #495057;
+background-color: #c3cbd3;
 }
 .sidebar {
 width: 150px;
@@ -103,7 +113,7 @@ font-family: 'Playfair Display', serif;
 .sidebar ul li:hover{
 background-color:  #495057;
 color: white;
-border-right: 2px solid white;
+border-right: 2px solid #dee2e6;
 
 }
 .sidebar ul li img {
@@ -120,11 +130,11 @@ text-align: center;
 margin-left: 10px;
 }
 .tab{
-background-color: #f6fff8;
+background-color: #dee2e6;
 display: flex;
 width: calc(100% - 150px);
 position: absolute;
-height:calc(100% - 100px);
+height:calc(100% - 110px);
 margin-top: 60px;
 justify-content: flex-start;
 align-self: flex-start;   
@@ -157,8 +167,6 @@ width: 100%;
 flex-wrap: wrap;
 }
 .id{
-
-background-color: #cce3de;
 display: flex;
 flex:1;
 min-width: 50px;
@@ -166,13 +174,11 @@ max-width: 70px;
 justify-content: center;
 }
 .changes{
-background-color: #cce3de;
 min-width: 110px;
 max-width: 100px;
 justify-content: center;
 }
 .preco,.custo,.quantidade{
-background-color: #cce3de;
 display: flex;
 flex: 1;
 min-width: 70px;
@@ -181,7 +187,6 @@ justify-content: center;
 }
 
 .nome,.fabricante{
-background-color: #cce3de;
 display: flex;
 flex: 1;
 min-width: 160px;
@@ -189,7 +194,6 @@ max-width: 160px;
 justify-content: center;
 }
 .descricao{
-background-color: #cce3de;
 display: flex;
 flex: 1;
 min-width: 150px;
@@ -197,7 +201,6 @@ max-width: 150px;
 justify-content: center;
 }
 .data{
-background-color: #cce3de;
 display: flex;
 flex: 1;
 min-width: 130px;
@@ -214,17 +217,30 @@ display: flex;
 align-self: flex-start;   
 flex-direction: row;
 width: 100%;
-background-color: #cce3de;
+background-color: #ced4da;
 flex-wrap: wrap;
-border-top: 1px  #36453b solid;
+border-top: 1px  #4f5d75 solid;
+}
+.linhas:hover{
+background-color:#4f5d75 ;
+cursor: pointer;
 }
 
 
 .paginacao{
-border: 2px solid;
-height: 60px;
+border-top: 1px solid;
+height: 41px;
 display: flex;
 bottom: 0%;
 width:100%;
 position: absolute;
+justify-content: center;
+align-items: center;
+}
+.page{
+padding-left: 20px;
+cursor: pointer;
+}
+.page:hover{
+color: red;
 }
