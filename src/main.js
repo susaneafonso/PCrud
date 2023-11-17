@@ -107,11 +107,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 data.setAttribute("class", "data")
                 data.innerHTML = element.data.slice(0,19)
                 linhas.appendChild(data)
+                 
 
-                const changes= document.createElement("div")  
-                changes.setAttribute("class","changes")  
-                changes.innerHTML="teste"   
-                linhas.appendChild(changes)
+               const changes= document.createElement("div")  
+               changes.setAttribute("class","changes")  
+               linhas.appendChild(changes)
+
+            
+               const alterar= document.createElement("img")  
+               alterar.setAttribute("class","alterar")  
+               alterar.setAttribute("src","./css/img/editar.png")
+               changes.appendChild(alterar)
+
+               const excluir= document.createElement("img")  
+               excluir.setAttribute("class","excluir")  
+               excluir.setAttribute("src","./css/img/lixeira.png")  
+               changes.appendChild(excluir)
+
+            
+            linhas.appendChild(changes)
 
                 linhas_prod.appendChild(linhas)
 
@@ -181,9 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             const alterar= document.createElement("img")  
             alterar.setAttribute("class","alterar")  
-      
             alterar.setAttribute("src","./css/img/editar.png")
-            
             changes.appendChild(alterar)
 
             const excluir= document.createElement("img")  
@@ -220,7 +232,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         paginacao.appendChild(btn_before)
 
-        // Adiciona até três números à frente
         for (let i = paginaAtual; i <= Math.min(paginaAtual + 3, totalPaginas); i++) {
             const button = document.createElement('div')
             button.classList.add('page')
@@ -276,12 +287,39 @@ document.addEventListener('DOMContentLoaded', function () {
     
                 setTimeout(() => {
                     novaJanela.postMessage({ nme, fabri, quanti, cst, prec, descri,cod }, '*');
-                }, 500); // Aguarda 500 milissegundos (ajuste conforme necessário)
+                }, 500);
             }
         });
     }
-    Alterar()
-    consultar()
+
+
+function exclusao() {
+        linhas_prod.addEventListener('click', async function (event) {
+            const target = event.target;
+            if (target.classList.contains('excluir')) {
+                console.log("Clicada");
+    
+                const confirmar = window.confirm("Você realmente deseja excluir este item?");
+                if (confirmar){
+                    const linhaClicada = target.closest('.linhas');
+                    const cod= linhaClicada.querySelector('.id').textContent;
+
+                 try{
+                    const response = await api.delete('/produtos/' + cod)  
+                    alert("Registro excluído!")
+                 }
+                 catch (error) {
+                    console.error("Erro ao excluir o item:", error);
+                }
+
+                }
+        }})
+    }
+
+exclusao()
+
+Alterar()
+consultar()
 
 
 
