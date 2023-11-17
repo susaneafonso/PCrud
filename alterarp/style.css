@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+.formulario{
+display: flex;
+background-color: #d1d4d6;
+font-family: 'Playfair Display', serif;
+font-weight: 700;
+justify-content: center;
+height: 100%;
+}
+
+#titulo{
+font-size: 20px;
+width: 100%;
+border-bottom: 1px solid #9ea5ad;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+height: 40px;
+text-align: center;
+color: #7b8396;
+}
+
+.formulario form{
+font-size: 16px;
+margin-top: 20px;
+width: 80%;
+padding-top: 10px;
+border-radius: 10px;
+height: 80%;
+position: absolute;
+top: 10%;
+left: 10%;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+
+.text{
+margin-top: 20px;
+height: 70px;
+width: 80%;
+margin-left: 10%;  
+}
+
+.text input{
+height: 30px;
+cursor: pointer;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);  
+}
+
+.text .name,.text .fabric{
+border:  4px solid;
+display: inline;
+}
+
+.custom-width{
+width: 40px;
+}
+
+.valor{
+height: 80px;
+width: 80%;
+margin-left: 10%;
+}
+
+.input-group input{
+width: 30px;
+cursor: pointer;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.desc{
+height: 170px;
+width: 80%;
+margin-top: 0px;
+margin-left: 10%;
+}
+
+.descrip{
+width: 240px;
+height: 90px;
+cursor: pointer;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#decor{
+height: 100px;
+}
+
+#decor1{
+border-bottom: 2px solid #c3d0dd;
+height: 100px;
+}
+
+.formulario label{
+margin-bottom: 20px;
+}
+
+.botoes{
+display: flex;
+width: 80%;
+margin-left: 10%;
+margin-top: 0px;
+justify-content: center; 
+}
+
+.botoes input{
+background-color: #7b8396;
+border-radius: 10px;
+margin-bottom: 20px;
+border: 1px solid #d1d4d6;
+cursor: pointer;
+}
+
+.botoes input:hover{
+color: red;
+border: 1px solid red;
+}
+
+.botoes #btmeio{
+margin-left: 10px;
+margin-right: 10px;
+width: 80px;
+}
+
+.botoes #btn_salve{
+width: 80px;
+text-align: center;
+}

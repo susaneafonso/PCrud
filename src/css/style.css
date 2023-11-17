@@ -176,7 +176,15 @@ justify-content: center;
 .changes{
 min-width: 110px;
 max-width: 100px;
+display: flex;
 justify-content: center;
+
+}
+.alterar,.excluir{
+margin-right: 10px;
+height: 16px;
+margin-top: 2px;
+cursor: pointer;
 }
 .preco,.custo,.quantidade{
 display: flex;
@@ -224,7 +232,6 @@ color: black;
 }
 .linhas:hover{
 background-color:#4f5d75 ;
-cursor: pointer;
 color: #dee2e6;
 }
 
