@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
         botoes.forEach(btn => btn.classList.remove('active'));
         botoes[paginaAtual - 1].classList.add('active');
     }
-
+ 
     function Alterar() {
         linhas_prod.addEventListener('click', function (event) {
             const target = event.target;
@@ -289,3 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 })
+   
+
+
+
