@@ -1,4 +1,3 @@
-// obs: A alteração está sendo feita, mas quando os dados sao jogados no display, nao esta sendo organizado em ordem(arrumar)
 document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('message', function (event) {
         const mensagem = event.data
@@ -44,9 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 "qtda": quantidade,
                 "preco": preco,
                 "custo": custo,
-            };
+            }
+            const confirmar = window.confirm("Você realmente deseja alterar este item?");
+            if (confirmar){
             console.log(data);
             const response = await api.put('/produtos/' + cod, data);
+            alert("Registro Alterado")
+            }
         }
 
         inp_btn_salve.onclick = () => {
@@ -55,7 +58,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.addEventListener("DOMContentLoaded", init);
     }
-});
+    const btn_cancelar=document.getElementById("btn_cancelar")
+    btn_cancelar.onclick=()=>{
+        const confirmar = window.confirm("Você realmente deseja cancelar a alteração e retornar à página principal?");
+            if (confirmar){
+               window.close()
+    }
+}
+})
     
 
 

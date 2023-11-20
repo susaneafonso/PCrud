@@ -142,7 +142,7 @@ flex-direction: column;
 .colunas_prod{
 border-top-right-radius: 20px; 
 border-top-left-radius: 20px;   
-height: calc(100% - 50px);
+height: calc(100% - 40px);
 width: 90%; 
 display: flex;
 margin-left: 5%;
@@ -204,8 +204,15 @@ height: 18px;
 width: 18px;
 }
 
+.id{
+display: flex;
+flex:1;
+min-width: 50px;
+max-width: 70px;
+justify-content: center;
 
-.preco,.custo,.quantidade{
+}
+.level,.uf{
 display: flex;
 flex: 1;
 min-width: 70px;
@@ -213,18 +220,11 @@ max-width: 90px;
 justify-content: center;
 }
 
-.nome,.fabricante{
+.nome,.email,.password{
 display: flex;
 flex: 1;
-min-width: 160px;
-max-width: 160px;
-justify-content: center;
-}
-.descricao{
-display: flex;
-flex: 1;
-min-width: 150px;
-max-width: 150px;
+min-width: 170px;
+max-width: 180px;
 justify-content: center;
 }
 .data{
@@ -233,6 +233,14 @@ flex: 1;
 min-width: 130px;
 max-width: 170px;
 justify-content: center;
+
+}
+.changes{
+min-width: 110px;
+max-width: 100px;
+display: flex;
+justify-content: center;
+
 }
 #cabecal{
 background-color: #4f5d75;
@@ -256,7 +264,6 @@ color: #dee2e6;
 
 
 .paginacao{
-/* border-top: 1px solid; */
 height: 41px;
 display: flex;
 bottom: 0%;

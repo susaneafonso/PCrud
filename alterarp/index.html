@@ -41,7 +41,7 @@
                 <label for="preco">Preço:</label>
                 <div class="input-group">
                   <span class="input-group-text">R$</span>
-                  <input type="number" id="preco" name="preco" class="form-control custom-width<input type="number" id="preco" name="preco" class="form-control custom-width" min="0" max="10000" step="0.01" placeholder="0.00">
+                  <input type="number" id="preco" name="preco" class="form-control custom-width input" type="number" id="preco" name="preco" class="form-control custom-width" min="0" max="10000" step="0.01" placeholder="0.00">
                 </div>
               </div>
               <div class="col">
@@ -65,7 +65,7 @@
            
           <div class="botoes">
           
-             <input type="button" value="Cancelar" onclick="confirmExit()">
+             <input id="btn_cancelar"  type="button" value="Cancelar">
              <input id="btmeio"   type="reset" value="Reset">
              <input id="btn_salve" value="Salvar" type="submit" onclick="inclusao()" >
             </div>

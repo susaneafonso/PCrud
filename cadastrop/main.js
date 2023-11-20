@@ -22,17 +22,28 @@ async function inclusao() {
           "qtda": quantidade,
           "preco": preco,
           "custo": custo,
-      }
+      } 
+        const confirmar = window.confirm("Você realmente deseja registrar este item?");
+        if (confirmar){
         console.log(data)
         const response = await api.post('/produtos', data)
+        alert("Registro Efetuado!")
+        }
 }
 
 inp_btn_salve.onclick = () => {
         inclusao()
+   
  }
 
 }
-
+const btn_cancelar=document.getElementById("btn_cancelar")
+btn_cancelar.onclick=()=>{
+    const confirmar = window.confirm("Você realmente deseja cancelar o registro e retornar à página principal?");
+        if (confirmar){
+           window.close()
+}
+}
 document.addEventListener("DOMContentLoaded", init)
 
 

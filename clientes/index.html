@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Susane Afonso</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <title>Clientes</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
     <div class="menu"></div>
     
     <div class="searchbar">
@@ -23,7 +24,7 @@
             Pesquisar
         </button>
             <select class="tabelas" id="tabela" >
-                <option value="product"  >Produtos</option>
+                <option value="product"  onclick="redirectCLi()">Produtos</option>
                 <option value="costumer" onclick="redirectCLi()">Clientes</option>
                 <option value="sales">Vendas</option>
             </select>
@@ -36,11 +37,10 @@
          <div class="header_prod">
                  <div id="cabecal" class="id">ID</div>
                  <div id="cabecal" class="nome">Nome</div>
-                 <div id="cabecal" class="fabricante">Fabricante</div>
-                 <div id="cabecal" class="quantidade">Quantidade</div>
-                 <div id="cabecal" class="custo">Custo</div>
-                 <div id="cabecal" class="preco">Preço</div>
-                 <div id="cabecal" class="descricao">Descrição</div>
+                 <div id="cabecal" class="email">Email</div>
+                 <div id="cabecal" class="uf">Estado</div>
+                 <div id="cabecal" class="password">Senha</div>
+                 <div id="cabecal" class="level">Level</div>
                  <div id="cabecal" class="data">Data</div>
                  <div id="cabecal" class="changes"></div>
          </div>
@@ -56,29 +56,14 @@
 
     <div class="sidebar">
         <ul>
-            <li><img src="./css/img/perfil.png" alt="" srcset=""><a id="newform" href="#">Profile</a></li>
-            <li><img src="./css/img/mais.png" alt="" srcset=""><a href="javascript:void(0);"  onclick="window.open('../cadastrop/index.html','form','fullscreen=0,resizable=0,height=550,width=600')">
+            <li><img src="./img/perfil.png" alt="" srcset=""><a id="newform" href="#">Profile</a></li>
+            <li><img src="./img/mais.png" alt="" srcset=""><a href="javascript:void(0);"  onclick="window.open('../clientes/cadastroCLi/index.html','form','fullscreen=0,resizable=0,height=550,width=600')">
                 Criar</a></li>
-            <li><img src="./css/img/historia.png" alt=""        ><a href="#">Histórico</a></li>
-            <li><img src="./css/img/sair.png" alt="" srcset="">  <a href="#">Sair</a></li>
+            <li><img src="./img/historia.png" alt=""        ><a href="#">Histórico</a></li>
+            <li><img src="./img/sair.png" alt="" srcset="">  <a href="#">Sair</a></li>
         </ul>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="./main.js"></script>
-    <!-- <script src="../alterarp/main.js"></script> -->
 </body>
 </html>
